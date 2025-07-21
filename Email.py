@@ -3,6 +3,9 @@ import smtplib
 from email import policy
 from email.parser import BytesParser
 
+# https://intranet.beijaflore.com/intranet/llisapi.dll?func=ll&objaction=overview&objid=14342979
+# https://intranet.beijaflore.com/intranet/llisapi.dll?func=ll&objaction=overview&objid=14956947
+
 def envoyer_emails(dossier, serveur_smtp, port, email_utilisateur, mot_de_passe):
     # Liste tous les fichiers dans le dossier
     fichiers = [f for f in os.listdir(dossier) if f.endswith('.eml')]
